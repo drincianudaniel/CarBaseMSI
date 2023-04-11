@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner {
+  background: white;
+  padding: 100px 100px 100px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../resources/images/banner-image2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner p {
+  color: white;
+  font-size: 100;
+  font-weight: 10;
+  margin-right: 650px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.offer {
+  background: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer p {
+  font-size: 40;
+  font-weight: 10;
+  text-align: center;
+}
+
+.offer-content {
+  align-items: center;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  margin-top: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 50px;
+}
+
+.offer-content p {
+  font-size: 20;
+  font-weight: 10;
+}
+.offer-content section {
+  padding: 1rem 1rem 1.5rem;
+  border: 1px solid #cbcbcc;
+}
+
+.offer-content section:hover {
+  border-color: blue;
+}
+.car,
+.rent,
+.app {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+@media (max-width: 991px) {
+  .banner {
+    padding: 200px 10px 10px;
+    flex-direction: column;
+  }
+
+  .banner p {
+    color: white;
+    font-size: 50;
+    font-weight: 10;
+    margin-right: 0px;
+    margin-top: 200px;
+  }
+
+  .offer,
+  .offer-content {
+    flex-direction: column;
+  }
+
+  .offer-content {
+    margin-top: 0px;
+    min-height: 1000px;
+  }
+
+  .offer-content section {
+    padding-top: 20px;
+    width: 234px;
+  }
+
+  .car,
+  .rent,
+  .app {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner {
+    padding: 200px 10px 10px;
+    flex-direction: column;
+  }
+
+  .banner p {
+    color: white;
+    font-size: 60;
+    font-weight: 10;
+    margin-right: 0px;
+  }
+
+  .offer-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#slider {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 100px;
+  max-width: 600px;
+  position: relative;
+  overflow: hidden;
+  border: 10px solid white;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.slide {
+  width: 100%;
+
+  display: none;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+img {
+  width: 100%;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.controls:hover {
+  background: white;
+  transition: 0.3s;
+}
+
+.controls:active {
+  color: grey;
+}
+
+#left-arrow {
+  left: 10px;
+}
+
+#right-arrow {
+  right: 10px;
+}
+
+#dots-con {
+  text-align: center;
+}
+.dot {
+  display: inline-block;
+  background: grey;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 10px 5px;
+}
+
+.active {
+  background: rgb(7, 67, 213);
+}
+
+@media (max-width: 576px) {
+  #slider {
+    width: 100%;
+  }
+
+  .controls {
+    font-size: 1em;
+  }
+
+  #dots-con {
+    display: none;
+  }
+}

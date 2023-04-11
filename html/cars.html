@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cars.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+
+    <title>CarBase Rental</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"
+        ><image src="../resources/images/carbasewhite.png"></image
+      ></a>
+      <ul class="header-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="desktopapp.html">Desktop Application</a></li>
+      </ul>
+      <ul class="header-login">
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </header>
+
+    <div class="banner">
+      <div class="content">
+        <div class="searchbox">
+          <input
+            class="searchbar"
+            type="search"
+            id="search"
+            onblur="getVal()"
+            data-search
+          />
+          <button class="searchb" id="SearchButton" onclick="search()">
+            Search
+          </button>
+        </div>
+        <div class="user-cards">
+          <div class="border-cards" data-user-cards-container>
+            <template data-user-template>
+              <div class="card">
+                <ul class="body" data-body>
+                  <li class="header" data-make></li>
+                  <li class="author" data-model></li>
+                </ul>
+                <center><img class="imagine" src="" data-image /></center>
+                <button class="details">View Details</button>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="social-footer">
+      <div class="social-footer-left">
+        <p>CarBase</p>
+      </div>
+      <div class="social-footer-icons">
+        <ul class="menu simple">
+          <a href="https://www.facebook.com/" style="text-decoration: none"
+            ><i class="fa icon-facebook" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            style="text-decoration: none"
+            ><i class="fa icon-instagram" aria-hidden="true"></i
+          ></a>
+          <a href="https://www.pinterest.com/" style="text-decoration: none"
+            ><i class="fa icon-pinterest" aria-hidden="true"></i
+          ></a>
+          <a href="https://twitter.com/?lang=en" style="text-decoration: none"
+            ><i class="fa icon-twitter" aria-hidden="true"></i
+          ></a>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../js/cars.js"></script>
+  </body>
+</html>
